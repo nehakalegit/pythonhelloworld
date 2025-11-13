@@ -1,0 +1,7 @@
+version: "3.8"
+
+services:
+    web:
+          image: docker.io/nehakaledocker/pythonhelloworld
+          restart: unless-stopped
+          command: sh -c "python helloworld.py && tail -f /dev/null"
