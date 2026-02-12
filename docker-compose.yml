@@ -3,3 +3,9 @@ services:
     image: docker.io/nehakaledocker/pythonhelloworld
     #  restart: unless-stopped
     command: python helloworld.py
+
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
