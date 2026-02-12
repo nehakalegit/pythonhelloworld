@@ -1,6 +1,4 @@
-
 services:
-    web:
-          image: docker.io/nehakaledocker/pythonhelloworld
-          restart: unless-stopped
-          command: python helloworld.py
+  web:
+    image: docker.io/nehakaledocker/pythonhelloworld
+    command: python helloworld.py
